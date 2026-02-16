@@ -47,7 +47,7 @@ p {
   line-height: 120%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   h1,
   h2,
   h3,
@@ -108,7 +108,7 @@ main {
   margin-bottom: 15vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #logo {
     width: 80vw;
   }
@@ -167,7 +167,7 @@ main {
   z-index: 100;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   #live-logo {
     width: 206px;
   }
@@ -178,7 +178,7 @@ main {
   margin: 80px auto 60px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   #live-section {
     max-width: 1140px;
   }
@@ -193,7 +193,7 @@ main {
   line-height: 1;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .live-header-mobile {
     display: none;
   }
@@ -204,7 +204,7 @@ main {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .live-header-desktop {
     display: flex;
     justify-content: space-between;
@@ -240,7 +240,7 @@ main {
   line-height: 1.2;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .live-location-mobile {
     display: none;
   }
@@ -265,7 +265,7 @@ main {
   overflow: hidden;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   #video-container {
     aspect-ratio: 16 / 9;
   }

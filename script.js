@@ -7,7 +7,7 @@ const radioLogos = document.getElementById('radio-logos');
 // Use GSAP's matchMedia for better responsive handling
 ScrollTrigger.matchMedia({
   // Desktop
-  "(min-width: 769px)": function () {
+  "(min-width: 1025px)": function () {
     gsap.fromTo(logo,
       {
         top: '50%',
@@ -29,8 +29,8 @@ ScrollTrigger.matchMedia({
     );
   },
 
-  // Mobile
-  "(max-width: 768px)": function () {
+  // Tablet/Mobile
+  "(max-width: 1024px)": function () {
     gsap.fromTo(logo,
       {
         top: '50%',
