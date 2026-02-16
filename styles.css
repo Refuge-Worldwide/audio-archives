@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #e75243;
+  --secondary-color: #6f7fb1;
+  --background: #000;
+  --text-colour: #fff;
+}
+
+@font-face {
+  font-family: "Helvetica Com";
+  src:
+    url("/assets/Helvetica Com Black Condensed.woff2") format("woff2"),
+    url("/assets/Helvetica Com Black Condensed.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Com";
+  src:
+    url("/assets/Helvetica Com Light Condensed.woff2") format("woff2"),
+    url("/assets/Helvetica Com Light Condensed.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Helvetica Com", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url("/assets/grain-bg.png");
+  background: var(--background);
+  color: var(--text-colour);
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+@media (min-width: 769px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-size: 2rem;
+  }
+}
+
+main {
+  padding: 20px;
+  overflow-x: hidden;
+  max-width: 100vw;
+  position: relative;
+}
+
+.text-red {
+  color: var(--primary-color);
+}
+
+.text-blue {
+  color: var(--secondary-color);
+}
+
+#spacer {
+  height: calc(100vh - 200px);
+}
+
+#logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 675px;
+  z-index: 100;
+}
+
+#radio-logos {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  z-index: -1;
+}
+
+#info {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    width: 80vw;
+  }
+
+  #radio-logos {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 85vh;
+    width: auto;
+  }
+
+  #spacer {
+    height: 100vh;
+  }
+}
+
+.link {
+  border: var(--text-colour) 1px solid;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: var(--text-colour);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.link:hover {
+  background-color: var(--text-colour);
+  color: var(--background);
+}
+
+#logos {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  height: 23px;
+}
+
+#logos img {
+  height: 100%;
+}
