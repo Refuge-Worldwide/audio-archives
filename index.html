@@ -8,33 +8,117 @@
   </head>
   <body>
     <main>
-    <img src="/assets/audio-archives.svg" id="logo" />
+      <!-- LIVE -->
+      <!-- <img src="/assets/audio-archives.svg" id="live-logo" />
 
-    <img src="/assets/radio-logos.png" id="radio-logos" />
-    <div id="spacer"></div>
-    <div id="info">
+      <section id="live-section">
+        <div id="live-header" class="live-header-mobile">
+          <div id="live-status">
+            <span id="live-dot"></span>
+            <span class="text-red">ON AIR</span>
+          </div>
+          <div id="live-time" class="text-blue">2PM–10PM CET</div>
+        </div>
+
+        <div id="live-header-desktop" class="live-header-desktop">
+          <div id="live-status-desktop">
+            <span id="live-dot-desktop"></span>
+            <span class="text-red">ON AIR</span> 2PM–10PM CET
+          </div>
+          <div id="live-location">
+            JOIN US AT <span class="text-blue">NBB GALLERY</span> KARL MARX 75
+            <span class="text-red">10243 BERLIN</span>
+          </div>
+        </div>
+
+        <div id="video-container">
+          <mux-player
+            id="mux-player"
+            playback-id="qxb01i6T202018GFS02vp9RIe01icTcMA01"
+            metadata-video-title="Audio Archives Live"
+            accent-color="#e75243"
+            muted
+            autoplay
+            loop
+          ></mux-player>
+
+          <div id="custom-controls">
+            <button id="mute-btn" class="control-btn" aria-label="Unmute">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  id="mute-icon"
+                  d="M11 5L6 9H2v6h4l5 4V5z M23 9l-6 6 M17 9l6 6"
+                />
+              </svg>
+            </button>
+            <button id="play-btn" class="control-btn" aria-label="Pause">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path id="play-icon" d="M6 4h4v16H6zM14 4h4v16h-4z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="live-location-mobile" class="live-location-mobile">
+          JOIN US AT <span class="text-blue">NBB GALLERY</span> KARL MARX 75
+          <span class="text-red">10243 BERLIN</span>
+        </div>
+      </section> -->
+
+      <!-- COMING SOON -->
+      <img src="/assets/audio-archives.svg" id="logo" />
+      <img src="/assets/radio-logos.png" id="radio-logos" />
+      <div id="spacer"></div>
+      <div id="info">
         <h2 class="text-red" style="margin-bottom: 0px">Streaming Live from Berlin</h2>
         <p style="margin-top: 0px">Saturday Feb 28 <span class="text-blue">2PM – 10PM</span> </br>
         <span class="text-blue">NBB GALLERY</span> KARL MARX 75 <span class="text-red">10243 BERLIN</span></span>
         </br>
         </br>
-        <p><span class="text-red">Nico Adomako</span> Oroko Radio <span class="text-red">Richard Akingbehin</span> 
-Refuge Worldwide <span class="text-blue">Lily Haz</span> Noods Radio <span class="text-red">Hermenieia</span> Radio Lola <span class="text-red">Nick Klein</span> Montez Press Radio <span class="text-blue">Daisy Ray</span> Kiosk Radio <span class="text-blue">ML</span> Carhartt WIP RAdio</p>
+        <p>
+          <span class="text-red">Nico Adomako</span> Oroko Radio
+          <span class="text-red">Richard Akingbehin</span> Refuge Worldwide
+          <span class="text-blue">Lily Haz</span> Noods Radio
+          <span class="text-red">Hermenieia</span> Radio Lola
+          <span class="text-red">Nick Klein</span> Montez Press Radio
+          <span class="text-blue">Daisy Ray</span> Kiosk Radio
+          <span class="text-blue">ML</span> Carhartt WIP RAdio
+        </p>
 
-        <a class="link" href="https://www.carhartt-wip.com/en-de/e/audio-archives">LEARN MORE</a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.carhartt-wip.com/en-de/e/audio-archives"
+          >LEARN MORE</a
+        >
         <div id="logos">
-            <a href="">
-                <img src="/assets/nbb.png" />
-            </a>
-            <a href="">
-                <img src="/assets/carhartt.png" />
-            </a>
-            <a href="">
-                <img src="/assets/hhv.png" />
-            </a>
+          <a href="" target="_blank">
+            <img src="/assets/nbb.png" />
+          </a>
+          <a href="" target="_blank">
+            <img src="/assets/carhartt.png" />
+          </a>
+          <a href="" target="_blank">
+            <img src="/assets/hhv.png" />
+          </a>
         </div>
-    </div>
+      </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
