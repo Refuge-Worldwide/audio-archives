@@ -163,6 +163,7 @@ main {
   gap: 20px;
   justify-content: center;
   height: 23px;
+  max-width: 100%;
 }
 
 #logos img {
