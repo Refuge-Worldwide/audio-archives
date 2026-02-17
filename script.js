@@ -12,12 +12,12 @@ ScrollTrigger.matchMedia({
       {
         top: '50%',
         y: '-50%',
-        width: '675px'
+        scale: 1
       },
       {
         top: '50px',
         y: '0',
-        width: '264px',
+        scale: 264 / 675,
         scrollTrigger: {
           trigger: document.body,
           start: 'top top',
@@ -35,12 +35,12 @@ ScrollTrigger.matchMedia({
       {
         top: '50%',
         y: '-50%',
-        width: '80vw'
+        scale: 1
       },
       {
         top: '50px',
         y: '0',
-        width: '165px',
+        scale: 165 / 350,
         scrollTrigger: {
           trigger: document.body,
           start: 'top top',

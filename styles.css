@@ -115,7 +115,8 @@ main {
 
 @media (max-width: 1024px) {
   #logo {
-    width: 80vw;
+    width: 350px;
+    max-width: 90vw;
   }
 
   #radio-logos-wrapper {
