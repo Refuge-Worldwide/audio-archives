@@ -69,6 +69,20 @@ ScrollTrigger.matchMedia({
         }
       );
     }
+
+    gsap.fromTo('#down-arrow',
+      { opacity: 1 },
+      {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: document.body,
+          start: 'top top',
+          end: '+=200',
+          scrub: 0.25,
+          pin: false
+        }
+      }
+    );
   }
 });
 
