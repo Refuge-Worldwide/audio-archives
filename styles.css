@@ -114,6 +114,20 @@ main {
 }
 
 @media (max-width: 1024px) {
+  #info {
+    text-align: left;
+  }
+
+  #logos {
+    justify-content: flex-start;
+  }
+
+  .link {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 1024px) {
   #logo {
     width: 350px;
     max-width: 90vw;
