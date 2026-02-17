@@ -40,7 +40,7 @@ ScrollTrigger.matchMedia({
       {
         top: '50px',
         y: '0',
-        width: '50vw',
+        width: '165px',
         scrollTrigger: {
           trigger: document.body,
           start: 'top top',
@@ -60,9 +60,9 @@ ScrollTrigger.matchMedia({
         {
           rotation: -180,
           scrollTrigger: {
-            trigger: radioLogos,
+            trigger: document.body,
             start: 'top top',
-            end: 'bottom top',
+            end: 'bottom bottom',
             scrub: 0.25,
             pin: false
           }

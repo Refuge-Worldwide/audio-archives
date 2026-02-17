@@ -89,15 +89,20 @@ main {
   z-index: 100;
 }
 
-#radio-logos {
+#radio-logos-wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
   height: auto;
-  object-fit: contain;
   z-index: -1;
+}
+
+#radio-logos {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 #info {
@@ -113,13 +118,18 @@ main {
     width: 80vw;
   }
 
-  #radio-logos {
+  #radio-logos-wrapper {
     position: absolute;
-    top: 30px;
+    top: 50vh;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     height: 85vh;
     width: auto;
+  }
+
+  #radio-logos {
+    width: auto;
+    height: 100%;
   }
 
   #spacer {
@@ -129,14 +139,16 @@ main {
 
 .link {
   border: var(--text-colour) 1px solid;
-  padding: 0.5em 1em;
+  padding: 0.75rem 1rem 0.5rem 1rem;
   text-decoration: none;
   color: var(--text-colour);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   margin-top: 60px;
+  line-height: 1;
+  font-weight: 900;
 }
 
 .link:hover {
@@ -157,6 +169,15 @@ main {
   height: 100%;
 }
 
+#down-arrow {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  z-index: 100;
+}
+
 /* LIVE SECTION */
 #live-logo {
   position: fixed;
@@ -170,6 +191,10 @@ main {
 @media (min-width: 1025px) {
   #live-logo {
     width: 206px;
+  }
+
+  #down-arrow {
+    display: none;
   }
 }
 
