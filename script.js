@@ -10,7 +10,7 @@ ScrollTrigger.matchMedia({
   "(min-width: 1025px)": function () {
     gsap.fromTo(logo,
       {
-        top: '50%',
+        top: '53.5%',
         y: '-50%',
         scale: 1
       },
@@ -21,7 +21,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
           trigger: document.body,
           start: 'top top',
-          end: '+=500',
+          end: '+=400',
           scrub: 0.25,
           pin: false
         }
@@ -33,7 +33,7 @@ ScrollTrigger.matchMedia({
   "(max-width: 1024px)": function () {
     gsap.fromTo(logo,
       {
-        top: '50%',
+        top: '53.5%',
         y: '-50%',
         scale: 1
       },
@@ -44,7 +44,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
           trigger: document.body,
           start: 'top top',
-          end: '+=500',
+          end: '+=400',
           scrub: 0.25,
           pin: false
         }

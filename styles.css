@@ -81,7 +81,7 @@ main {
 
 #logo {
   position: fixed;
-  top: 50%;
+  top: 46.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 675px;
@@ -124,7 +124,6 @@ main {
 
 @media (max-width: 1024px) {
   #info {
-    text-align: left;
     margin-bottom: 30px;
   }
 
