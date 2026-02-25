@@ -8,8 +8,8 @@
 @font-face {
   font-family: "Helvetica Com";
   src:
-    url("/assets/Helvetica Com Black Condensed.woff2") format("woff2"),
-    url("/assets/Helvetica Com Black Condensed.woff") format("woff");
+    url("assets/Helvetica Com Black Condensed.woff2") format("woff2"),
+    url("assets/Helvetica Com Black Condensed.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 @font-face {
   font-family: "Helvetica Com";
   src:
-    url("/assets/Helvetica Com Light Condensed.woff2") format("woff2"),
-    url("/assets/Helvetica Com Light Condensed.woff") format("woff");
+    url("assets/Helvetica Com Light Condensed.woff2") format("woff2"),
+    url("assets/Helvetica Com Light Condensed.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
