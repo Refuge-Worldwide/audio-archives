@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audio Archives - Carhartt WIP</title>
+    <title>Audio Archives | Launch Event</title>
+    <meta
+      name="description"
+      content="Audio Archives celebrates 15+ years of Carhartt WIP Radio, spotlighting independent artists and labels through a book, capsule and events broadcasted worldwide."
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/favicon-192x192.png" />
+    <meta property="og:image" content="https://audioarchives.live/assets/og-image.jpg" />
     <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
@@ -26,55 +35,25 @@
             <span class="text-red">ON AIR</span> 2PM–10PM CET
           </div>
           <div id="live-location">
-            JOIN US AT <span class="text-blue">NBB GALLERY</span> KARL MARX 75
+            JOIN US AT
+            <span class="text-blue">NBB GALLERY</span> KARL-MARX-ALLEE 75
             <span class="text-red">10243 BERLIN</span>
           </div>
         </div>
 
         <div id="video-container">
-          <mux-player
-            id="mux-player"
-            playback-id="qxb01i6T202018GFS02vp9RIe01icTcMA01"
-            metadata-video-title="Audio Archives Live"
-            accent-color="#e75243"
-            muted
-            autoplay
-            loop
-          ></mux-player>
-
-          <div id="custom-controls">
-            <button id="mute-btn" class="control-btn" aria-label="Unmute">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  id="mute-icon"
-                  d="M11 5L6 9H2v6h4l5 4V5z M23 9l-6 6 M17 9l6 6"
-                />
-              </svg>
-            </button>
-            <button id="play-btn" class="control-btn" aria-label="Pause">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path id="play-icon" d="M6 4h4v16H6zM14 4h4v16h-4z" />
-              </svg>
-            </button>
-          </div>
+          <iframe
+            id="live-iframe"
+            src="http://localhost:3000/audio-archive-livestream"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <div id="live-location-mobile" class="live-location-mobile">
-          JOIN US AT <span class="text-blue">NBB GALLERY</span> KARL MARX 75
+          JOIN US AT
+          <span class="text-blue">NBB GALLERY</span> KARL-MARX-ALLEE 75
           <span class="text-red">10243 BERLIN</span>
         </div>
       </section> -->
@@ -91,14 +70,14 @@
         <p class="event-details" style="margin-top: 0px">Saturday Feb 28 <span class="text-blue">2PM – 10PM</span> </br>
         <span class="text-blue">NBB GALLERY</span> KARL-MARX-ALLEE 75 <span class="text-red"></br>10243 BERLIN</span></span>
         <p>
-          14:00–15:00 <span class="text-blue">WIP</span>
-          15:00–16:00 <span class="text-blue">Sarah San</span> Kiosk Radio
-          16:00–17:00 <span class="text-blue">Leona</span> Refuge Worldwide
-          17:00–18:00 <span class="text-blue">ML</span> Carhartt WIP Radio
-          18:00–19:00 <span class="text-blue">Flo Dill</span> NTS Radio
-          19:00–20:00 <span class="text-blue">Eleftheria</span> Noods Radio
-          20:00–21:00 <span class="text-blue">Hermeneia</span> Radio Lola
-          21:00–22:00 <span class="text-red">Nico Adomako</span> Oroko Radio
+          14:00–15:00 <span class="text-blue">WIP</span> 15:00–16:00
+          <span class="text-blue">Sarah San</span> Kiosk Radio 16:00–17:00
+          <span class="text-blue">Leona</span> Refuge Worldwide 17:00–18:00
+          <span class="text-blue">ML</span> Carhartt WIP Radio 18:00–19:00
+          <span class="text-blue">Flo Dill</span> NTS Radio 19:00–20:00
+          <span class="text-blue">Eleftheria</span> Noods Radio 20:00–21:00
+          <span class="text-blue">Hermeneia</span> Radio Lola 21:00–22:00
+          <span class="text-red">Nico Adomako</span> Oroko Radio
         </p>
 
         <a
@@ -120,7 +99,6 @@
         </div>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js?v=4"></script>
